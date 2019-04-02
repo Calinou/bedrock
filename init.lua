@@ -33,7 +33,7 @@ minetest.register_ore({
 
 minetest.register_node("bedrock:bedrock", {
 	description = "Bedrock",
-	tile_images = {"bedrock_bedrock.png"},
+	tiles = {"bedrock_bedrock.png"},
 	drop = "",
 	-- Set `unbreakable` for Map Tools' admin pickaxe
 	groups = {unbreakable = 1, not_in_creative_inventory = 1},
@@ -42,7 +42,7 @@ minetest.register_node("bedrock:bedrock", {
 
 minetest.register_node("bedrock:deepstone", {
 	description = "Deepstone",
-	tile_images = {"bedrock_deepstone.png"},
+	tiles = {"bedrock_deepstone.png"},
 	drop = "default:stone", -- Intended
 	groups = {cracky = 1},
 	sounds = default.node_sound_stone_defaults(),
