@@ -8,25 +8,27 @@ Licensed under the zlib license. See LICENSE.md for more information.
 --]]
 
 minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "bedrock:bedrock",
-	wherein        = "default:stone",
+	ore_type = "scatter",
+	ore = "bedrock:bedrock",
+	wherein = "default:stone",
 	clust_scarcity = 1,
 	clust_num_ores = 5,
-	clust_size     = 2,
-	height_min     = -30912, -- Engine changes can modify this value
-	height_max     = -30656, -- This ensures the bottom of the world is not even loaded
+	clust_size = 2,
+	y_min = -30912,
+
+	-- 256 layers of bedrock (caves will still cut through it)
+	y_max = -30656,
 })
 
 minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "bedrock:deepstone",
-	wherein        = "default:stone",
+	ore_type = "scatter",
+	ore = "bedrock:deepstone",
+	wherein = "default:stone",
 	clust_scarcity = 1,
 	clust_num_ores = 5,
-	clust_size     = 2,
-	height_min     = -30656,
-	height_max     = -30000,
+	clust_size = 2,
+	y_min = -30656,
+	y_max = -30000,
 })
 
 minetest.register_node("bedrock:bedrock", {
