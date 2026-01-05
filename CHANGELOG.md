@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- Node aliases.
+- More Blocks support (optional, used only if the mod if present).
+
+### Changed
+
+- Updated to `core` namespace.
+- Made nodes rotatable.
+
+### Fixed
+
+- Moved `depends.txt` to `mod.conf` to fix deprecation warnings.
+
 ## [1.0.0] - 2017-10-15
 
 - Initial versioned release.
